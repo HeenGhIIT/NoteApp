@@ -225,7 +225,7 @@ public class MainActivity extends AppCompatActivity implements GestureDetector.O
                 }
                 if (which == 1) {
                     deleteNote(position);
-                } else {
+                } else if (which == 2) {
                     Intent sharingIntent = new Intent(android.content.Intent.ACTION_SEND);
                     sharingIntent.setType("text/plain");
                     String shareBody = note.getNote();
